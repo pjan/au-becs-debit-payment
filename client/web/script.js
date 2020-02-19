@@ -61,8 +61,24 @@ const setupElements = function() {
   const style = {
     base: {
       // Add your base input styles here. For example:
+      color: "#32325d",
+      fontFamily:
+        '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif',
+      fontSmoothing: "antialiased",
       fontSize: "16px",
-      color: "#32325d"
+      "::placeholder": {
+        color: "#aab7c4"
+      },
+      ":-webkit-autofill": {
+        color: "#32325d"
+      }
+    },
+    invalid: {
+      color: "#fa755a",
+      iconColor: "#fa755a",
+      ":-webkit-autofill": {
+        color: "#fa755a"
+      }
     }
   };
 
